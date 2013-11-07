@@ -5,7 +5,8 @@
 package Control;
 
 import Persistencia.cargador;
-import VisorHIstogama.Visor;
+import Vista.dialogo;
+import vista.Visor;
 import java.io.FileNotFoundException;
 import modelo.ConstruirHitograma;
 
@@ -21,6 +22,8 @@ public class HistogramaControl {
    construrHisto.calcularHistograma(c.cargadorCorreo("C:\\Users\\usuario\\Documents"
             + "\\NetBeansProjects\\kata3Histograma\\src\\Persistencia\\misCorreos.txt"));
     Visor viewer=new Visor(construrHisto.getHistograma());  
-     viewer.show();
+  //   viewer.show();
+    dialogo d=new dialogo();
+     d.execute();
     }
 }
